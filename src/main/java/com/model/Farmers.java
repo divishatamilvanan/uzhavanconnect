@@ -7,8 +7,10 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 
 @Entity
+@Data
 public class Farmers {
 	
 	@Id
@@ -31,4 +33,5 @@ public class Farmers {
 
 	
 
-}
+
+
