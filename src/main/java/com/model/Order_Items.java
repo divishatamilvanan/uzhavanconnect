@@ -1,6 +1,5 @@
 package com.model;
 
-
 import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -12,6 +11,7 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Order_Items {
 	
 	@Id

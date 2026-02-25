@@ -11,6 +11,7 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Farmers {
 	
 	@Id
@@ -21,7 +22,7 @@ public class Farmers {
 	private String Soil_Type;
 	private String Farming_Type;
 	private Long Experience_Years;
-	private Boolean Status;
+	private Boolean Verification_Status;
 	
 	@Enumerated(EnumType.STRING)
 	private Role role;
@@ -30,11 +31,3 @@ public class Farmers {
 	private LocalDateTime createdAt;
 	
 }
-
-	
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 671657b1dfe29d3eae9a4243df2ebb2d68ee7250

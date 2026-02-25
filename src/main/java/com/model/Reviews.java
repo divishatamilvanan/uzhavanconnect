@@ -1,7 +1,6 @@
 package com.model;
 
 import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -12,6 +11,7 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Reviews {
 	
 	@Id
@@ -20,13 +20,7 @@ public class Reviews {
 	private Long Consumer_Id;
 	private Long Product_Id;
 	private Long Rating;
-	private String Subtotal;
-<<<<<<< HEAD
-	
-=======
-	private Long Subto;
->>>>>>> ce44f8474b61a9803090807baed01173529b1f12
-	
+	private String Review_Text;
 	
 	@Enumerated(EnumType.STRING)
 	private Role role;
