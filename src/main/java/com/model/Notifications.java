@@ -12,26 +12,22 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Products {
-	
+public class Notifications {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long Notification_Id;
+	private Long UserId;
+	private String Title;
+	private String Message;
+	private String Type;
+	private Short is_Read;
 	
-	private Long Product_Id;
-	private Long Farmer_Id;
-	private String Crop_Name;
-	private String Category;
-	private Double Quantity;
-	private String Quality_Grade;
-	private Double Price;
-	private LocalDateTime Harvest_Date;
-	private Boolean Status;
-
+	
+	
 	@Enumerated(EnumType.STRING)
 	private Role role;
 	
-	private boolean isActive;
+	private Boolean isActive;
 	private LocalDateTime createdAt;
-	
 
 }
