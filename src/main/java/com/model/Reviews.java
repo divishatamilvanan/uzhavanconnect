@@ -19,7 +19,11 @@ public class Reviews {
 	private Long Product_Id;
 	private Long Rating;
 	private String Subtotal;
+<<<<<<< HEAD
 	
+=======
+	private Long Subto;
+>>>>>>> ce44f8474b61a9803090807baed01173529b1f12
 	
 	
 	@Enumerated(EnumType.STRING)
