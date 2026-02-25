@@ -24,7 +24,7 @@ public class Farmers {
 	@Enumerated(EnumType.STRING)
 	private Role role;
 	
-	private boolean isActive;
+	private Boolean isActive;
 	private LocalDateTime createdAt;
 	
 }
