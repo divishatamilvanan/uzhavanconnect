@@ -34,4 +34,7 @@ public class Farmers {
 	
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 671657b1dfe29d3eae9a4243df2ebb2d68ee7250
