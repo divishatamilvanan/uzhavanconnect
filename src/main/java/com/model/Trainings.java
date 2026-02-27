@@ -1,8 +1,6 @@
 package com.model;
 
 import java.time.LocalDateTime;
-import org.hibernate.annotations.AnyDiscriminatorImplicitValues.Strategy;
-import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -14,23 +12,21 @@ import lombok.Data;
 @Entity
 @Data
 
-public class User {
-
+public class Trainings {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long User_Id;
-	private String Name;
-	private String Email;
-	private String PhoneNumber;
-	private String Password;
-	private String State;
-	private String PinCode;
-	private Boolean Status;
+	private Long Training_Id;
+	private String Title;
+	private String Trainer_Name;
+	private String Video_Link;
+	private String Category;
+	private LocalDateTime Training_Date;
+	private Long Created_By;
 	
 	@Enumerated(EnumType.STRING)
 	private Role role;
-	
+
 	private Boolean isActive;
 	private LocalDateTime createdAt;
-	
 }

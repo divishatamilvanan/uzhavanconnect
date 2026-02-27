@@ -1,7 +1,6 @@
 package com.model;
 
 import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -12,18 +11,18 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Products {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private Long Product_Id;
 	private Long Farmer_Id;
 	private String Crop_Name;
 	private String Category;
 	private Double Quantity;
 	private String Quality_Grade;
-	private Double Price;
+	private Double Expected_Price;
 	private LocalDateTime Harvest_Date;
 	private Boolean Status;
 

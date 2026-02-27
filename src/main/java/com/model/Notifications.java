@@ -1,7 +1,6 @@
 package com.model;
 
 import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -12,11 +11,13 @@ import lombok.Data;
 
 @Entity
 @Data
+
 public class Notifications {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Notification_Id;
-	private Long UserId;
+	private Long User_Id;
 	private String Title;
 	private String Message;
 	private String Type;
